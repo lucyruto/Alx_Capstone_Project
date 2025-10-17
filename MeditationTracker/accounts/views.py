@@ -1,4 +1,4 @@
-from rest_framework import generics, permissions
+from rest_framework import generics, permissions, status
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 from .models import CustomUser
@@ -8,6 +8,17 @@ class RegisterView(generics.CreateAPIView):
     queryset = CustomUser.objects.all()
     serializer_class = CustomUserSerializer
     permission_classes = [permissions.AllowAny]
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        refresh = RefreshToken.for_user(user)
+        return Response({
+            'message': 'Registration was successful.',
+            'user': CustomUserSerializer(user).data
+        }, status=status.HTTP_201_CREATED)
+
 
 class LoginView(generics.GenericAPIView):
     serializer_class = LoginSerializer
@@ -19,11 +30,10 @@ class LoginView(generics.GenericAPIView):
         user = serializer.validated_data['user']
         refresh = RefreshToken.for_user(user)
         return Response({
-            'message': 'Registration successful.'
+            'message': 'Login was successful.',
             'refresh': str(refresh),
             'access': str(refresh.access_token),
             'user': CustomUserSerializer(user).data
-            'next': '/api/accounts/login/' 
         })
 
         

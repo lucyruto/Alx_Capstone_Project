@@ -12,7 +12,7 @@ class CustomUser(AbstractUser):
         related_name='following',
         blank=True
     )
-
+    consistency_score = models.PositiveIntegerField(default=0)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
 

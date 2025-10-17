@@ -17,7 +17,7 @@ class MeditationSessionViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         session = serializer.save(user=self.request.user)
         self.update_consistency(self.request.user)
-        self.check_leaderboard(self.request.user)
+        
 
     def perform_destroy(self, instance):
         user = instance.user
