@@ -94,9 +94,9 @@ The Meditation Tracker helps build that habit by making progress measurable and 
    - Body (raw JSON):  
    ```json
    {
-  "meditation_type": "gratitude",
-  "duration": 25,
-  "notes": "Morning calm session"
+    "meditation_type": "gratitude",
+    "duration": 25,
+    "notes": "Morning calm session"
   }
 
 4. **Get All Meditation Sessions** 
@@ -109,7 +109,7 @@ The Meditation Tracker helps build that habit by making progress measurable and 
    - Body (raw JSON):  
    ```json
    {
-  "duration": 23,
+    "duration": 23,
   }
 
 6. **DELETE All Meditation Sessions** 
