@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+*.env.*
+*.egg-info/
+*.egg
+
+# Django
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.mo
+*.coverage
+*.cache
+*.pytest_cache/
+*.mypy_cache/
+
+# Media and static files
+media/
+staticfiles/
+static/
+
+# VSCode
+.vscode/
+
+# IDEs
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System
+.DS_Store
+Thumbs.db
