@@ -81,17 +81,17 @@ The Meditation Tracker helps build that habit by making progress measurable and 
      "password": "StrongPassword123"
    }
 2. **Login** 
-  - POST `http://127.0.0.1:8000/api/accounts/login/`  
-  - Body (raw JSON): 
-  ```json 
+   - POST `http://127.0.0.1:8000/api/accounts/login/`  
+   - Body (raw JSON): 
+   ```json 
    {
      "email": "testuser@example.com",
      "password": "StrongPassword123"
    }
 3. **Add a Meditation Session** 
-  - POST `http://127.0.0.1:8000/api/meditations/sessions/`  
-  - Header: Authorization: Bearer <access_token>
-  - Body (raw JSON):  
+   - POST `http://127.0.0.1:8000/api/meditations/sessions/`  
+   - Header: Authorization: Bearer <access_token>
+   - Body (raw JSON):  
    ```json
    {
   "meditation_type": "gratitude",
@@ -100,12 +100,12 @@ The Meditation Tracker helps build that habit by making progress measurable and 
   }
 
 4. **Get All Meditation Sessions** 
-  - POST `http://127.0.0.1:8000/api/meditations/sessions/` 
-  - Header: Authorization: Bearer <access_token> 
+   - POST `http://127.0.0.1:8000/api/meditations/sessions/` 
+   - Header: Authorization: Bearer <access_token> 
    
 5. **Update a Meditation Session** 
-  - PATCH `http://127.0.0.1:8000/api/meditations/sessions/<id>/`  
-  - Header: Authorization: Bearer <access_token>
+   - PATCH `http://127.0.0.1:8000/api/meditations/sessions/<id>/`  
+   - Header: Authorization: Bearer <access_token>
    - Body (raw JSON):  
    ```json
    {
@@ -113,6 +113,6 @@ The Meditation Tracker helps build that habit by making progress measurable and 
   }
 
 6. **DELETE All Meditation Sessions** 
-  - DELETE `http://127.0.0.1:8000/api/meditations/sessions/` 
-  - Header: Authorization: Bearer <access_token> 
+   - DELETE `http://127.0.0.1:8000/api/meditations/sessions/` 
+   - Header: Authorization: Bearer <access_token> 
    
