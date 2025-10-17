@@ -19,7 +19,11 @@ class LoginView(generics.GenericAPIView):
         user = serializer.validated_data['user']
         refresh = RefreshToken.for_user(user)
         return Response({
+            'message': 'Registration successful.'
             'refresh': str(refresh),
             'access': str(refresh.access_token),
             'user': CustomUserSerializer(user).data
+            'next': '/api/accounts/login/' 
         })
+
+        
