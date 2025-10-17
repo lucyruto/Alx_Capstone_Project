@@ -97,7 +97,7 @@ The Meditation Tracker helps build that habit by making progress measurable and 
     "meditation_type": "gratitude",
     "duration": 25,
     "notes": "Morning calm session"
-  }
+   }
 
 4. **Get All Meditation Sessions** 
    - POST `http://127.0.0.1:8000/api/meditations/sessions/` 
@@ -110,7 +110,7 @@ The Meditation Tracker helps build that habit by making progress measurable and 
    ```json
    {
     "duration": 23,
-  }
+   }
 
 6. **DELETE All Meditation Sessions** 
    - DELETE `http://127.0.0.1:8000/api/meditations/sessions/` 
