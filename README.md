@@ -1,4 +1,3 @@
-
 <h1 align="center">Meditation Tracker API</h1>
 
 <p align="justify">
