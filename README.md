@@ -23,7 +23,7 @@ The Meditation Tracker helps build that habit by making progress measurable and 
 - Secure JWT-based authentication  
 - Full CRUD functionality for meditation sessions  
 - Automatic leaderboard ranking based on total meditation minutes  
-- Notifications for top users  
+- Notifications for top users  (To be added in Version 2)
 - Pagination for long activity histories  
 
 ---
@@ -61,7 +61,7 @@ The Meditation Tracker helps build that habit by making progress measurable and 
 
 ---
 
-### Notifications
+### Notifications (To be added in Version 2)
 
 | Method | Endpoint | Description | Postman Example |
 |--------|----------|-------------|----------------|
