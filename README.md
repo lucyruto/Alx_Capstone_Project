@@ -3,6 +3,7 @@
 <p align="justify">
 A Django REST Framework project for recording meditation sessions.  
 Users can log, edit, view, and delete their sessions, track consistency, and receive notifications when they reach the top of the leaderboard.
+Access the live API [here](https://lucy11.pythonanywhere.com/api).
 </p>
 
 ---
